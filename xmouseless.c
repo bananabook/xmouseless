@@ -204,7 +204,7 @@ void handle_key(KeyCode keycode, Bool is_press) {
     /* speed bindings */
     for (i = 0; i < LENGTH(speed_bindings); i++) {
         if (speed_bindings[i].keysym == keysym) {
-            speed = is_press ? speed_bindings[i].speed : default_speed;
+            speed = speed_bindings[i].speed ;
             printf("speed: %i\n", speed);
         }
     }

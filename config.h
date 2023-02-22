@@ -10,10 +10,11 @@ static const unsigned int default_speed = 500;
 /* changes the speed of the mouse pointer */
 static SpeedBinding speed_bindings[] = {
     /* key             speed */  
-    { XK_Tab,           3000 },
-    { XK_space,         1500 },
-    { XK_Alt_L,         100  },
-    { XK_Control_L,     10   },
+    { XK_g,            3000 },
+    { XK_f,            1500 },
+    { XK_d,            500  },
+    { XK_s,            100  },
+    { XK_a,         10   },
 };
 
 /* moves the mouse pointer
@@ -32,9 +33,9 @@ static MoveBinding move_bindings[] = {
 static ClickBinding click_bindings[] = {
     /* key         button */  
     //{ XK_space,    1 },
-    { XK_s,        1 },
-    { XK_d,        2 },
-    { XK_f,        3 },
+    { XK_y,        1 },
+    { XK_x,        2 },
+    { XK_c,        3 },
 };
 
 /* scrolls up, down, left and right
@@ -45,7 +46,7 @@ static ScrollBinding scroll_bindings[] = {
     { XK_m,        0 ,   -25 },
     { XK_plus,     0 ,    80 },
     { XK_minus,    0 ,   -80 },
-    { XK_comma,        25,    0  },
+    { XK_comma,    25,    0  },
     { XK_b,       -25,    0  },
 };
 
@@ -57,6 +58,7 @@ static ShellBinding shell_bindings[] = {
     //{ XK_9,        "xdotool mousemove 1280 540" },
     { XK_9,        "xdotool mousemove 1278 540" },
     { XK_8,        "xdotool mousemove 2560 0" },
+    { XK_7,        "xdotool mousemove 2560 1080" },
 };
 
 /* exits on key release which allows click and exit with one key */
